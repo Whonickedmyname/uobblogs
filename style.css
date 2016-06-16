@@ -1,20 +1,14 @@
 /*
-Theme Name: Twenty Sixteen
-Theme URI: https://wordpress.org/themes/twentysixteen/
-Author: the WordPress team
-Author URI: https://wordpress.org/
-Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
-Version: 1.1
+Theme Name: UoB Blogs
+Author: The University of Birmingham
+Author URI: https://www.birmingham.ac.uk
+Description: UoB Blogs is based on Twenty Sixteen from Wordpess
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
-Text Domain: twentysixteen
+Text Domain: UoB Blogs
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+This theme, like WordPress, is licensed under the GPL. The logos and images however are not! 
 */
-
-
 /**
  * Table of Contents
  *
@@ -292,8 +286,8 @@ button,
 input,
 select,
 textarea {
-	color: #1a1a1a;
-	font-family: Merriweather, Georgia, serif;
+	color: #4C4C4C;
+	font-family: Arial,Helvetica,Verdana,Corbel,"Lucida Grande","Lucida Sans Unicode","Lucida Sans","DejaVu Sans","Bitstream Vera Sans","Liberation Sans","Verdana Ref",sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.75;
@@ -451,7 +445,7 @@ html {
 }
 
 body {
-	background: #1a1a1a;
+	background: #FFFFFF;;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -587,12 +581,12 @@ input[type="reset"][disabled]:focus,
 input[type="submit"],
 input[type="submit"][disabled]:hover,
 input[type="submit"][disabled]:focus {
-	background: #1a1a1a;
-	border: 0;
+	background: #605270;
+	border: 1px solid #605270;
 	border-radius: 2px;
 	color: #fff;
 	font-family: Montserrat, "Helvetica Neue", sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 	letter-spacing: 0.046875em;
 	line-height: 1;
 	padding: 0.84375em 0.875em 0.78125em;
@@ -607,7 +601,9 @@ input[type="reset"]:hover,
 input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-	background: #007acc;
+	background: #605270;
+	border: 1px solid #605270;
+	color: #f3f3f3f3f3f3;
 }
 
 button:focus,
@@ -780,7 +776,7 @@ a:active {
 }
 
 .main-navigation {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: Georgia,Garamond,"Apple Garamond","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",serif;
 }
 
 .site-footer .main-navigation {
@@ -1034,7 +1030,7 @@ a:active {
 	border-top: 4px solid #1a1a1a;
 	border-bottom: 4px solid #1a1a1a;
 	clear: both;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: Georgia,Garamond,"Apple Garamond","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",serif;
 	margin: 0 7.6923% 3.5em;
 }
 
@@ -1060,7 +1056,7 @@ a:active {
 
 .post-navigation .post-title {
 	display: inline;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: Georgia,Garamond,"Apple Garamond","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",serif;
 	font-size: 23px;
 	font-size: 1.4375rem;
 	font-weight: 700;
@@ -1079,7 +1075,7 @@ a:active {
 
 .pagination {
 	border-top: 4px solid #1a1a1a;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: Georgia,Garamond,"Apple Garamond","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",serif;
 	font-size: 19px;
 	font-size: 1.1875rem;
 	margin: 0 7.6923% 2.947368421em;
@@ -1383,9 +1379,23 @@ blockquote:after,
  */
 
 .widget {
-	border-top: 4px solid #1a1a1a;
-	margin-bottom: 3.5em;
-	padding-top: 1.75em;
+	border-top: 1px solid #CECBC6;
+	margin-bottom: 1.5em;
+	padding-top: 0;
+}
+
+.widget ul {
+	list-style: none;
+	margin: 0;
+}
+
+.widget li {
+	display: block;
+    	padding: .5em 0 .5em 1.75em;
+    	background-color: #F0F0F0;
+    	margin-bottom: 2px;
+    	color: #605270;
+    	border: 0;
 }
 
 .widget-area > :last-child,
@@ -1393,14 +1403,19 @@ blockquote:after,
 	margin-bottom: 0;
 }
 
+
 .widget .widget-title {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: Georgia,Garamond,"Apple Garamond","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",serif;
 	font-size: 16px;
-	font-size: 1rem;
 	letter-spacing: 0.046875em;
 	line-height: 1.3125;
-	margin: 0 0 1.75em;
-	text-transform: uppercase;
+	font-size: 1.125rem;
+    	margin-top: 0;
+    	margin-bottom: 2px;
+    	background-color: #605270;
+    	color: #FFF;
+	padding: .75em 1.25em;
+	font-weight: normal;
 }
 
 .widget .widget-title:empty {
@@ -1443,13 +1458,14 @@ blockquote:after,
 
 /* Recent Posts widget */
 .widget_recent_entries .post-date {
-	color: #686868;
 	display: block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
-	font-size: 13px;
-	font-size: 0.8125rem;
-	line-height: 1.615384615;
-	margin-bottom: 0.538461538em;
+    padding: .5em .75em .5em 1.75em;
+    background-color: #F0F0F0;
+    margin-bottom: 2px;
+    color: #605270;
+    background-position: top .65em left .75em;
+    transition: all .15s linear;
+    border: 0;
 }
 
 .widget_recent_entries li:last-child .post-date {
@@ -1461,6 +1477,7 @@ blockquote:after,
 	margin-top: -0.375em;
 }
 
+/*PUT THIS BACK */
 .widget_rss .rss-date,
 .widget_rss cite {
 	color: #686868;
@@ -1537,7 +1554,7 @@ blockquote:after,
  */
 
 .site-header {
-	padding: 2.625em 7.6923%;
+	padding: 1em 7.6923%;
 }
 
 .site-header-main {
@@ -1557,10 +1574,10 @@ blockquote:after,
 }
 
 .site-title {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: Georgia,Garamond,"Apple Garamond","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",serif;
 	font-size: 23px;
-	font-size: 1.4375rem;
-	font-weight: 700;
+	font-size: 2rem;
+	font-weight: normal;
 	line-height: 1.2173913043;
 	margin: 0;
 }
@@ -1655,10 +1672,10 @@ blockquote:after,
 }
 
 .entry-title {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-family: Georgia,Garamond,"Apple Garamond","Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",serif;
 	font-size: 28px;
-	font-size: 1.75rem;
-	font-weight: 700;
+	font-size: 1.5rem;
+	font-weight: normal;
 	line-height: 1.25;
 	margin-bottom: 1em;
 }
@@ -1786,7 +1803,7 @@ a.post-thumbnail:focus {
 .textwidget h4,
 .textwidget h5,
 .textwidget h6 {
-	font-weight: 900;
+	font-weight: normal;
 }
 
 .entry-content h1:first-child,
@@ -2715,7 +2732,7 @@ p > video {
 	}
 
 	.site {
-		margin: 21px;
+		margin: 0px;
 	}
 
 	.site-main {
@@ -2723,17 +2740,17 @@ p > video {
 	}
 
 	.site-header {
-		padding: 3.9375em 7.6923%;
+		padding: 1em 7.6923%;
 	}
 
 	.site-branding {
-		margin-top: 1.3125em;
+		margin-top: 0.5em;
 		margin-bottom: 1.3125em;
 	}
 
 	.site-title {
 		font-size: 28px;
-		font-size: 1.75rem;
+		font-size: 2.5rem;
 		line-height: 1.25;
 	}
 
@@ -2803,7 +2820,7 @@ p > video {
 
 	.entry-title {
 		font-size: 33px;
-		font-size: 2.0625rem;
+		font-size: 1.85rem;
 		line-height: 1.2727272727;
 		margin-bottom: 0.8484848485em;
 	}
@@ -3090,11 +3107,12 @@ p > video {
 		font-size: 0.8125rem;
 		line-height: 1.6153846154;
 		margin-bottom: 3.230769231em;
-		padding-top: 1.615384615em;
+		padding-top: 0;
 	}
 
 	.widget .widget-title {
-		margin-bottom: 1.3125em;
+		margin-bottom: 2px;
+	
 	}
 
 	.widget p,
@@ -3106,11 +3124,13 @@ p > video {
 	.widget dd,
 	.widget table {
 		margin-bottom: 1.6153846154em;
+		font-family: Arial,Helvetica,Verdana,Corbel,"Lucida Grande","Lucida Sans Unicode","Lucida Sans","DejaVu Sans","Bitstream Vera Sans","Liberation Sans","Verdana Ref",sans-serif;
 	}
 
 	.widget li > ul,
 	.widget li > ol {
 		margin-bottom: 0;
+		
 	}
 
 	.widget blockquote {
@@ -3346,7 +3366,7 @@ p > video {
 	}
 
 	.site-header {
-		padding: 5.25em 4.5455%;
+		padding: 1em 4.5455%;
 	}
 
 	.site-branding,
@@ -3372,13 +3392,19 @@ p > video {
 		margin-bottom: 4.307692308em;
 	}
 
+	.widget a {
+		color: #605270;
+		line-height; 1.5;
+
+	}
+
 	.site-main > article {
 		margin-bottom: 7.0em;
 	}
 
 	.entry-title {
 		font-size: 40px;
-		font-size: 2.5rem;
+		font-size: 1.85rem;
 		line-height: 1.225;
 		margin-bottom: 1.05em;
 	}
@@ -3916,4 +3942,10 @@ p > video {
 	.widecolumn {
 		padding: 0;
 	}
+
+
+}
+.unibranding {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em;
 }
