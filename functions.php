@@ -405,3 +405,34 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+//gauntlet security recommendations
+function my_disable_author_archive() {
+    if ( is_author() ) {
+        global $wp_query;
+        $wp_query->set_404();
+        status_header(404);
+    } else {
+        redirect_canonical();
+    }
+}
+remove_filter( 'template_redirect', 'redirect_canonical' );
+add_action( 'template_redirect', 'my_disable_author_archive' );
+
+// Remove WP version from head
+remove_action( 'wp_head', 'wp_generator' );
+
+// Remove WP version from css & scripts
+function my_remove_wp_ver_css_js( $src ) {
+    if ( strpos( $src, 'ver=' ) ) {
+        $src = remove_query_arg( 'ver', $src );
+    }
+    return $src;
+}
+add_filter( 'style_loader_src', 'my_remove_wp_ver_css_js', 9999 );
+add_filter( 'script_loader_src', 'my_remove_wp_ver_css_js', 9999 );	
+
+// Remove WP version from RSS
+add_filter( 'the_generator', '__return_empty_string' );
+
+//end gauntlet security recommendations
